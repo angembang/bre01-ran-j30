@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>La cascade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <header>
+        <h1>La cascadet</h1>
+        <p>Comprendre les différents facteurs de la cascade: l'ordre dans la source, la spécificité et l'importance</p>
+    </header>
+    <main>
+       <article class="outer">
+           <h2>L'ordre dans la source</h2>
+           <p>
+               Un article ayant la classe <span>.outer</span>. Le texte de ce paragraphe est de couleur verte, c'est le selecteur <span>.outer p</span> qui est appliqué.
+           </p>
+           <p class="inner">
+               Un paragraphe ayant la classe <span>.inner</span>. Le texte de ce paragraphe est de couleur verte, c'est le selecteur
+               .outer p</span> qui est appliqué car il est écrit après le sélecteur <span>article .inner</span> dans la source. 
+               Les deux sélécteurs ayant la même spécificité (1 classe + 1 élément), c'est l'ordre dans la source qui compte.
+
+           </p>
+       </article>
+       <article class="alice">
+           <h2>La spécificité</h2>
+           <p>
+               Un article ayant la classe <span>.alice</span>. Le texte de ce paragraphe est de couleur bleue, c'est le selecteur <span>.alice p</span> 
+               qui est appliqué car il possède la plus grande spécificité (1 classe + 1 élément), supérieure à <span>.alice</span> (1 classe).
+           </p>
+           <p class="bob">
+               Un paragraphe ayant la classe <span>.bob</span>. Le texte de ce paragraphe est de couleur rouge orangé, c'est le selecteur <span>.alice .bob </span>
+               qui est appliqué car il possède la plus grande spécificité (2 classes), supérieure à <span>p.bob</span> (1 classe + 1 élément) et à <span>.bob</span> (1 classe).
+           </p>
+       </article>
+       <article class="base">
+           <h2>L'importance</h2>
+           <p>
+               Un article ayant la classe <span>.base</span>
+           </p>
+           <p class="important">
+               Un paragraphe ayant la classe <span>.important</span>. Le texte de ce paragraphe est de couleur rouge,
+               c'est la propriété <span>color: red</span> du selecteur
+               <span>.important</span> qui est appliqué car il y a la déclaration <span>!important</span>.
+           </p>
+       </article>
+       
+    </main>
+    <footer>
+        
+        <img src = "logo-3wa.png" alt = "logo 3wa">
+        <p>Ce matériel pédagogique est la propriété de la <a href="#">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+html {
+    background-color: white;
+}
+body {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+}
+
+header {
+    text-align: center;
+    background-color: #333333;
+    padding: 0.5rem;
+}
+header h1 {
+    color: #DD5735;
+}
+header p {
+    color: white;
+}
+
+main {
+    padding: 1rem;
+}
+
+.outer p {
+    color: green;
+}
+
+.alice p {
+    color: blue;
+}
+.alice .bob  {
+    color: #FF4500;
+}
+.important {
+    color: red !important;
+}
+span {
+    color: white;
+    background-color: black;
+}
+
+
+
+footer {
+    
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: 1rem;
+}
+footer p a {
+    color: #DD5735;
+}
